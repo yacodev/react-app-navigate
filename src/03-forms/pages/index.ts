@@ -3,3 +3,5 @@ export * from './FormikYupPage';
 export * from './RegisterPage';
 export * from './FormikComponents';
 export * from './FormikAbstraction';
+export * from './RegisterFormikPage';
+export * from './DynamicForm';

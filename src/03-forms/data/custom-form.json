@@ -1,0 +1,77 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "label": "First Name",
+    "placeholder": "Enter your name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "minLength",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "type": "input",
+    "name": "lastName",
+    "label": "Last Name",
+    "placeholder": "Enter your name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "label": "Email",
+    "placeholder": "Enter your email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "email"
+      }
+    ]
+  },
+  {
+    "type": "password",
+    "name": "password",
+    "label": "Password",
+    "placeholder": "Enter your password",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "options": [
+      {
+        "id": 1,
+        "label": "Super Mario Bros."
+      },
+      {
+        "id": 2,
+        "label": "The Legend of Zelda"
+      },
+      {
+        "id": 3,
+        "label": "Metroid"
+      }
+    ]
+  }
+]

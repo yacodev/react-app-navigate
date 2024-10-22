@@ -13,6 +13,8 @@ import {
   FormikYupPage,
   FormikComponents,
   FormikAbstraction,
+  RegisterFormikPage,
+  DynamicForm,
 } from '../03-forms/pages';
 
 export const Navigation = () => {
@@ -35,7 +37,7 @@ export const Navigation = () => {
                 to='/formik'
                 className={({ isActive }) => (isActive ? 'nav-active' : '')}
               >
-                Formik
+                Formik-Basic
               </NavLink>
             </li>
             <li>
@@ -43,7 +45,7 @@ export const Navigation = () => {
                 to='/yup'
                 className={({ isActive }) => (isActive ? 'nav-active' : '')}
               >
-                formik-yup
+                Formik-yup
               </NavLink>
             </li>
             <li>
@@ -51,7 +53,7 @@ export const Navigation = () => {
                 to='/components'
                 className={({ isActive }) => (isActive ? 'nav-active' : '')}
               >
-                formik-components
+                Formik-components
               </NavLink>
             </li>
             <li>
@@ -59,18 +61,36 @@ export const Navigation = () => {
                 to='/abstraction'
                 className={({ isActive }) => (isActive ? 'nav-active' : '')}
               >
-                formik-abstraction
+                Formik-abstraction
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/formik-register'
+                className={({ isActive }) => (isActive ? 'nav-active' : '')}
+              >
+                Register-Formik
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/dynamic-form'
+                className={({ isActive }) => (isActive ? 'nav-active' : '')}
+              >
+                Dynamic - form
               </NavLink>
             </li>
           </ul>
         </nav>
 
         <Routes>
-          <Route path='/' element={<RegisterPage />} />
+          <Route path='/register' element={<RegisterPage />} />
           <Route path='/formik' element={<FormikBasicPage />} />
           <Route path='/yup' element={<FormikYupPage />} />
           <Route path='/components' element={<FormikComponents />} />
           <Route path='/abstraction' element={<FormikAbstraction />} />
+          <Route path='/formik-register' element={<RegisterFormikPage />} />
+          <Route path='/dynamic-form' element={<DynamicForm />} />
           <Route path='/*' element={<Navigate to='/' />} />
         </Routes>
       </div>
